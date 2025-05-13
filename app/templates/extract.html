@@ -1,0 +1,10 @@
+{% extends "base.html" %} 
+{%block title%} Ekstrakcja opnii o produkcie {%endblock%} 
+
+{%block content %}
+    <form method="post">
+        <label for="product_id">Kod produktu</label>
+        <input type="text" id="product_id" name="product_id" placeholder="Podaj kod produktu" required />
+        <button type="submit">Pobierz opinie</button>
+    </form>
+{% endblock %}

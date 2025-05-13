@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+*,
+*::before,
+&::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - (67px + 65px));
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.navigation li a:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    bottom: 0;
+    padding-bottom: 16px;
+}
+
+section {
+    padding: 24px 16px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+}
+
+.section-heading {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-list {
+    max-width: 1200px;
+    width: 100vw;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.product-item {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 16px;
+    background-color: #f0f0f0;
+    border-top: gray 1px solid;
+    border-bottom: gray 1px solid;
+}
+
+.product-item span {
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.opinions_count {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 82, 168);
+    font-weight: 500;
+}
+
+.pros_count {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    font-weight: 500;
+}
+
+.cons_count {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background-color: red;
+}
+
+.average_stars {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+    font-weight: 500;
+}
