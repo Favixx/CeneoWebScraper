@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block title %} O autorze {%endblock%} {% block
+content %}
+<div class="author-info">
+  <img src="{{url_for('static', filename='my_face.jpg')}}" width="300" />
+  <div>
+    <h3>Bohdan Domanskyi</h3>
+    <p class="specialization">Junior Front-End Developer</p>
+    <p class="description">
+      Cześć! Nazywam się Bohdan Domanskyi i jestem junior front-end developerem
+      z pasją do tworzenia nowoczesnych, intuicyjnych oraz efektywnych aplikacji
+      internetowych. Mam doświadczenie w pracy z kluczowymi technologiami,
+      takimi jak HTML, CSS, JavaScript, i jestem zawsze otwarty na nowe wyzwania
+      oraz zdobywanie wiedzy. Moim celem jest projektowanie rozwiązań, które są
+      przyjazne dla użytkownika i przyciągają uwagę estetycznym wyglądem.
+      Chętnie dołączę do zespołu, gdzie będę mógł rozwijać swoje umiejętności i
+      wspierać sukces realizowanych projektów.
+    </p>
+  </div>
+</div>
+{% endblock %}

@@ -3,7 +3,7 @@ content%}
 <ul class="product-list">
   {% for product in products %}
   <li class="product-item">
-    <a href="{{ url_for('product', product_id=product['id']) }}"
+    <a href="{{ url_for('product', product_id=product.product_id) }}"
       >{{product.product_id}}</a
     >
     <span>{{product.product_name}}</span>
@@ -11,9 +11,21 @@ content%}
     <span class="pros_count">{{product.pros_count}}</span>
     <span class="cons_count">{{product.cons_count}}</span>
     <span class="average_stars">{{product.average_stars|round(2)}}</span>
-    <a type="button" href="#"></a>
-    <a type="button" href="#"></a>
-    <a type="button" href="#"></a>
+    <a
+      type="button"
+      href="{{ url_for('download', product_id=product.product_id, file_format='csv') }}"
+      >CSV</a
+    >
+    <a
+      type="button"
+      href="{{ url_for('download', product_id=product.product_id, file_format='xlsx') }}"
+      >XLSX</a
+    >
+    <a
+      type="button"
+      href="{{ url_for('download', product_id=product.product_id, file_format='json') }}"
+      >JSON</a
+    >
   </li>
   {% endfor %}
 </ul>

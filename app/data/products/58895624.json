@@ -1,0 +1,26 @@
+{
+    "product_id": "58895624",
+    "product_name": "Szczoteczka elektryczna SEYSSO Baby Penguin",
+    "opinions_count": "353",
+    "pros_count": 134,
+    "cons_count": 20,
+    "average_stars": 4.814814814814815,
+    "stars_distr": {
+        "0.0": 0,
+        "0.5": 2,
+        "1.0": 2,
+        "1.5": 1,
+        "2.0": 0,
+        "2.5": 1,
+        "3.0": 1,
+        "3.5": 3,
+        "4.0": 19,
+        "4.5": 33,
+        "5.0": 289
+    },
+    "recommendation_distr": {
+        "Nie polecan": 0,
+        "Polecam": 286,
+        "null": 59
+    }
+}

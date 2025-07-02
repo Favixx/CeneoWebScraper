@@ -18,19 +18,19 @@
       <nav>
         <ul class="navigation">
           <li><a href="{{ url_for('index') }}">Glówna</a></li>
-          <li><a href="{{ url_for('extract') }}">Ekstrakcja opnii</a></li>
+          <li><a href="{{ url_for('display_form') }}">Ekstrakcja opnii</a></li>
           <li><a href="{{ url_for('products') }}">Produkty</a></li>
           <li><a href="{{ url_for('author') }}">O autorze</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <h2 class="section-heading">{%block title%} {%endblock%}</h2>
-        <div class="content">
-          {% block content %}
-          {% endblock %}
-      </section>
+      <div class="container">
+        <section>
+          <h2 class="section-heading">{%block title%} {%endblock%}</h2>
+          <div class="content">{% block content %} {% endblock %}</div>
+        </section>
+      </div>
     </main>
     <footer>
       <p>Strona byla wykonana w procesie nauczania w ANS w Nowym Targu</p>

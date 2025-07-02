@@ -1,0 +1,26 @@
+{
+    "product_id": "112838829",
+    "product_name": "Ekspres Saeco GranAroma SM6582/30",
+    "opinions_count": "13",
+    "pros_count": 11,
+    "cons_count": 1,
+    "average_stars": 4.958333333333333,
+    "stars_distr": {
+        "0.0": 0,
+        "0.5": 0,
+        "1.0": 0,
+        "1.5": 0,
+        "2.0": 0,
+        "2.5": 0,
+        "3.0": 0,
+        "3.5": 0,
+        "4.0": 0,
+        "4.5": 1,
+        "5.0": 11
+    },
+    "recommendation_distr": {
+        "Nie polecan": 0,
+        "Polecam": 12,
+        "null": 0
+    }
+}
