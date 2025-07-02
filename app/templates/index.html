@@ -1,10 +1,48 @@
-{% extends "base.html" %} 
-{%block title%} Opis projektu {%endblock%} 
-{%block content %} 
-    <ul class="project-description">
-        <li>Cel aplikacji:</li>
-        <li>Opis działania aplikacji:</li>
-        <li>Zastosowane biblioteki:</li>
-        <li>Zastosowane podejścia:</li>
-    </ul> 
+{% extends "base.html" %} {% block title %} Opis projektu {% endblock %} {%
+block content %}
+<ul class="project-description">
+  <li>
+    <div>
+      <h3>Cel aplikacji</h3>
+      <p>
+        Aplikacja została stworzona w celu utrwalenia wiedzy zdobytej podczas
+        zajęć projektowych z kursu programowania w języku Python oraz przedmiotu
+        zaawansowane technologie webowe. Jej celem było praktyczne zastosowanie
+        poznanych technologii do stworzenia funkcjonalnej aplikacji webowej.
+      </p>
+    </div>
+
+    <div>
+      <h3>Opis działania aplikacji</h3>
+      <p>
+        Aplikacja umożliwia użytkownikom pobieranie opinii o produkcie z
+        Ceneo.pl, pobieranie plików z opiniami w formatach CSV, JSON, XLSX.
+        Została zaprojektowana z naciskiem na prostotę użytkowania,
+        bezpieczeństwo oraz przejrzystość interfejsu.
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div>
+      <h3>Zastosowane biblioteki</h3>
+      <p>
+        W projekcie wykorzystano m.in. biblioteki takie jak Flask,
+        BeautifulSoup, numpy, pandas, requests.
+      </p>
+    </div>
+    <div>
+      <h3>Zastosowane podejścia</h3>
+      <p>
+        W projekcie zastosowano podejście oparte na podziale logiki aplikacji na
+        funkcje i moduły. Do pobierania danych wykorzystano technikę web
+        scrapingu. Dane są analizowane i przekształcane z użyciem bibliotek do
+        analizy danych. Projekt korzysta z systemu kontroli wersji Git oraz
+        struktury folderów ułatwiającej zarządzanie danymi i kodem. Aplikacja
+        została wykonana z użyciem szablonów HTML oraz podstaw routingu we
+        Flasku.
+      </p>
+    </div>
+  </li>
+</ul>
 {% endblock %}

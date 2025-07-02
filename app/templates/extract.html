@@ -1,10 +1,16 @@
-{% extends "base.html" %} 
-{%block title%} Ekstrakcja opnii o produkcie {%endblock%} 
-
-{%block content %}
-    <form method="post">
-        <label for="product_id">Kod produktu</label>
-        <input type="text" id="product_id" name="product_id" placeholder="Podaj kod produktu" required />
-        <button type="submit">Pobierz opinie</button>
-    </form>
+{% extends "base.html" %} {%block title%} Ekstrakcja opnii o produkcie
+{%endblock%} {%block content %} {% if error is defined %}
+<p>{{error}}</p>
+{% endif %}
+<form method="post" action="{{ url_for('extract_data') }}" class="extract-form">
+  <label for="product_id">Kod produktu</label>
+  <input
+    type="text"
+    id="product_id"
+    name="product_id"
+    placeholder="Podaj kod produktu"
+    required
+  />
+  <button type="submit">Pobierz opinie</button>
+</form>
 {% endblock %}
