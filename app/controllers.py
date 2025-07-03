@@ -1,8 +1,6 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 from app.scraper import CeneoScraper
 from app.models import Product
-import os
-import json
 import pandas as pd
 
 main = Blueprint("main", __name__)
